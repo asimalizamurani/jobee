@@ -1,0 +1,48 @@
+﻿@model jobee.Models.User
+
+@namespace jobee.Views.User
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center bg-primary text-white">
+                        <h3>Register</h3>
+                    </div>
+                    <div class="card-body">
+                        <form method="post">
+                            <!-- Username -->
+                            <div class="mb-3">
+                                <label asp-for="Username" class="form-label">Username</label>
+                                <input asp-for="Username" type="text" class="form-control" id="username" name="Username" required>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label asp-for="Email" class="form-label">Email</label>
+                            <input type="email" asp-for="Email" class="form-control" id="email" name="Email" required>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="mb-3">
+                                <label asp-for="Password" class="form-label">Password</label>
+                            <input type="password" asp-for="Password" class="form-control" id="password" name="Password" required>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small>Already have an account? <a href="User/Login">Login</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

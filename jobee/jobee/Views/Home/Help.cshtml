@@ -1,0 +1,154 @@
+﻿<style>
+
+    .faq-section {
+        padding: 60px 0;
+    }
+
+    .faq-card {
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .faq-card-header {
+        background-color: #007bff;
+        color: black;
+        font-weight: bold;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .faq-card-body {
+        padding: 20px;
+        background-color: #f1f3f5;
+    }
+
+    .accordion-button {
+        background-color: #007bff;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #0056b3;
+            color: white;
+        }
+
+    .accordion-item {
+        margin-bottom: 10px;
+    }
+
+    .faq-header {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .faq-subheader {
+        font-size: 1.2rem;
+        text-align: center;
+        color: #666;
+        margin-bottom: 40px;
+    }
+
+    .help-btn {
+        display: block;
+        margin: 30px auto;
+        padding: 10px 30px;
+        background-color: #007bff;
+        color: white;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+        .help-btn:hover {
+            background-color: #0056b3;
+            text-decoration: none;
+        }
+</style>
+    <!-- FAQ Section -->
+    <div class="container faq-section">
+        <h1 class="faq-header">Frequently Asked Questions</h1>
+        <p class="faq-subheader">Find answers to your most common questions about our recruitment process.</p>
+
+        <div class="accordion" id="faqAccordion">
+
+            <!-- Question 1 -->
+            <div class="accordion-item faq-card">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is HR Recruitment Solutions?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body faq-card-body">
+                        HR Recruitment Solutions is an online platform that helps businesses streamline their recruitment process by providing advanced tools for automated screening, AI-powered candidate matching, and seamless collaboration.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item faq-card">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How do I apply for a job?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body faq-card-body">
+                        You can apply for a job by visiting the "Vacancies" section of our website, selecting a position, and submitting your resume and relevant details through our application form.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item faq-card">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How does the interview process work?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body faq-card-body">
+                        After applying, shortlisted candidates will be invited for interviews. These may be conducted virtually or in-person, and you will be notified with all the necessary details.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item faq-card">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Can I modify my application after submission?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body faq-card-body">
+                        No, once you submit your application, you cannot modify it. However, you can always contact us for any further questions or clarification.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item faq-card">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How can I contact support?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body faq-card-body">
+                        You can contact our support team by visiting the "Help" section, where you will find email and phone contact details for immediate assistance.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Help Button -->
+        <a href="/help" class="help-btn">Still Have Questions? Get in Touch</a>
+    </div>

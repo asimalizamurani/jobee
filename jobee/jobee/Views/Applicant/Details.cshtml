@@ -1,0 +1,31 @@
+﻿@model jobee.Models.Applicant
+
+@{
+    ViewData["Title"] = "Applicant Details";
+}
+
+<h1>Applicant Details</h1>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Applicant Information</h3>
+            <p><strong>Name:</strong> @Model.Name</p>
+            <p><strong>Email:</strong> @Model.Email</p>
+            <p><strong>Role:</strong> @Model.Role</p>
+            <p><strong>Applied At:</strong> @Model.AppliedAt.ToString("dd MMM yyyy")</p>
+            <p><strong>Resume:</strong> <a href="@Url.Content("~/resumes/" + Model.ResumePath)" target="_blank">View Resume</a></p>
+        </div>
+        <div class="col-md-6">
+            <h3>Vacancy Information</h3>
+            <p><strong>Title:</strong> @Model.AttachedVacancy?.Title ?? "N/A"</p>
+            <p><strong>Description:</strong> @Model.AttachedVacancy?.Description ?? "N/A"</p>
+            <p><strong>Department:</strong> @Model.AttachedVacancy?.Department ?? "N/A"</p>
+            <p><strong>Positions Available:</strong> @Model.AttachedVacancy?.PositionsAvailable ?? "N/A"</p>
+            <p><strong>Status:</strong> @Model.AttachedVacancy?.Status ?? "N/A"</p>
+        </div>
+    </div>
+    <div class="mt-4">
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

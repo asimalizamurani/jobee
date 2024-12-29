@@ -1,0 +1,41 @@
+﻿@model IEnumerable<jobee.Models.Interview>
+@{
+    ViewData["Title"] = "Applicant Interview Report";
+}
+
+<h2 class="text-center mt-4">Interview Report for @ViewBag.ApplicantName</h2>
+
+@if (ViewBag.Message != null)
+{
+    <p class="alert alert-warning">@ViewBag.Message</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Vacancy</th>
+                <th>Applicant</th>
+                <th>Interviewer</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var interview in Model)
+            {
+                <tr>
+                    <td>@interview.Vacancy.Title</td>
+                    <td>@interview.Applicant.Name</td>
+                    <td>@interview.Interviewer.Username</td>
+                    <td>@interview.Date.ToString("MM/dd/yyyy")</td>
+                    <td>@interview.Time.ToString(@"hh\:mm")</td>
+                    <td>@interview.Result</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<a href="@Url.Action("Index", "Interview")" class="btn btn-secondary">Back to Interviews</a>

@@ -1,0 +1,66 @@
+﻿@model jobee.Models.Vacancy
+
+@{
+    ViewData["Title"] = "Create Vacancy";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3>Create Vacancy</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" method="post">
+                        <!-- Title -->
+                        <div class="mb-3">
+                            <label asp-for="Title" class="form-label">Title</label>
+                            <input asp-for="Title" type="text" class="form-control" placeholder="Enter the job title" required>
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label">Description</label>
+                            <textarea asp-for="Description" class="form-control" rows="5" placeholder="Enter the job description" required></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <!-- Department -->
+                        <div class="mb-3">
+                            <label asp-for="Department" class="form-label">Department</label>
+                            <input asp-for="Department" type="text" class="form-control" placeholder="Enter department name" required>
+                            <span asp-validation-for="Department" class="text-danger"></span>
+                        </div>
+
+                        <!-- Positions Available -->
+                        <div class="mb-3">
+                            <label asp-for="PositionsAvailable" class="form-label">Positions Available</label>
+                            <input asp-for="PositionsAvailable" type="number" class="form-control" min="1" placeholder="Enter number of positions" required>
+                            <span asp-validation-for="PositionsAvailable" class="text-danger"></span>
+                        </div>
+
+                        <!-- Status -->
+                        <div class="mb-3">
+                            <label asp-for="Status" class="form-label">Status</label>
+                            <select asp-for="Status" class="form-select" required>
+                                <option value="Open" selected>Open</option>
+                                <option value="Closed">Closed</option>
+                            </select>
+                            <span asp-validation-for="Status" class="text-danger"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Create Vacancy</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="/Vacancy/Index" class="btn btn-link">Back to Vacancy List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

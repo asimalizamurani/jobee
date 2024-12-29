@@ -1,0 +1,47 @@
+﻿@model IEnumerable<jobee.Models.Interview>
+@{
+    ViewData["Title"] = "Interview List";
+}
+<div class="container mt-4">
+    <h2>Interview List</h2>
+    @if (User.IsInRole("Admin") || User.IsInRole("HR"))
+    {
+        <a class="btn btn-primary mb-3" asp-action="Create">Schedule New Interview</a>
+    }
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Vacancy</th>
+                <th>Applicant</th>
+                <th>Interviewer</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Result</th>
+                @if (User.IsInRole("Admin") || User.IsInRole("HR"))
+                {
+                    <th>Actions</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var interview in Model)
+            {
+                <tr>
+                    <td>@interview.Vacancy.Title</td>
+                    <td>@interview.Applicant.Name</td>
+                    <td>@interview.Interviewer.Username</td>
+                    <td>@interview.Date.ToShortDateString()</td>
+                    <td>@interview.Time</td>
+                    <td>@interview.Result</td>
+                    @if (User.IsInRole("Admin") || User.IsInRole("HR"))
+                    {
+                        <td>
+                            <a class="btn btn-warning" asp-action="Edit" asp-route-id="@interview.InterviewId">Edit</a>
+                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@interview.InterviewId">Delete</a>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

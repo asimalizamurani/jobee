@@ -1,0 +1,83 @@
+﻿@* @model jobee.Models.ApplicantPanelViewModel
+
+@{
+    ViewData["Title"] = "Applicant Dashboard";
+}
+
+<div class="container mt-5">
+    <h2>Applicant Dashboard</h2>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            Profile Information
+        </div>
+        <div class="card-body">
+            <p><strong>Name:</strong> @Model.ApplicantName.Name</p>
+            <p><strong>Email:</strong> @Model.Applicant.Email</p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            Applied Vacancies
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                @foreach (var vacancy in Model.AppliedVacancies)
+                {
+                    <li class="list-group-item">
+                        <strong>@vacancy.Title</strong> - Status: @vacancy.Status
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            Upcoming Interviews
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                @foreach (var interview in Model.UpcomingInterviews)
+                {
+                    <li class="list-group-item">
+                        <strong>@interview.Date.ToShortDateString() @interview.Time</strong> - Interviewer: @interview.Interviewer.Username
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            Resume
+        </div>
+        <div class="card-body">
+            <form method="post" enctype="multipart/form-data" asp-action="UploadResume">
+                <div class="form-group">
+                    <input type="file" class="form-control-file" name="file" />
+                </div>
+                <button type="submit" class="btn btn-primary">Upload Resume</button>
+            </form>
+            <a href="@Url.Action("DownloadResume", "User")" class="btn btn-secondary mt-2">Download Current Resume</a>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            Notifications
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                @foreach (var notification in Model.Notifications)
+                {
+                    <li class="list-group-item">
+                        @notification.Message
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+ *@

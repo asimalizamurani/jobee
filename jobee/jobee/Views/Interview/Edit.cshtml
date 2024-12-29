@@ -1,0 +1,36 @@
+﻿@model jobee.Models.Interview
+
+@{
+    ViewData["Title"] = "Edit Interview";
+}
+
+<h2 class="text-center mt-4">Edit Interview</h2>
+
+<form asp-action="Edit" method="post" class="p-4 border rounded shadow-sm bg-light">
+    <div class="form-group">
+        <label asp-for="VacancyId" class="control-label">Vacancy</label>
+        <select asp-for="VacancyId" class="form-control" asp-items="ViewBag.Vacancies"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="ApplicantId" class="control-label">Applicant</label>
+        <select asp-for="ApplicantId" class="form-control" asp-items="ViewBag.Applicants"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="InterviewerId" class="control-label">Interviewer</label>
+        <select asp-for="InterviewerId" class="form-control" asp-items="ViewBag.Interviewers"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Date" class="control-label">Date</label>
+        <input asp-for="Date" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Time" class="control-label">Time</label>
+        <input asp-for="Time" class="form-control" type="time" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Result" class="control-label">Result</label>
+        <textarea asp-for="Result" class="form-control" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

@@ -1,0 +1,32 @@
+﻿@model jobee.Models.Interview
+
+@{
+    ViewData["Title"] = "Delete Interview";
+}
+
+<h2 class="text-center mt-4">Delete Interview</h2>
+
+<div class="p-4 border rounded shadow-sm bg-light">
+    <h4 class="text-danger">Are you sure you want to delete this interview?</h4>
+    <dl class="row">
+        <dt class="col-sm-3">Vacancy</dt>
+        <dd class="col-sm-9">@Model.Vacancy.Title</dd>
+
+        <dt class="col-sm-3">Applicant</dt>
+        <dd class="col-sm-9">@Model.Applicant.Name</dd>
+
+        <dt class="col-sm-3">Interviewer</dt>
+        <dd class="col-sm-9">@Model.Interviewer.Username</dd>
+
+        <dt class="col-sm-3">Date & Time</dt>
+        <dd class="col-sm-9">@Model.InterviewDateTime</dd>
+
+        <dt class="col-sm-3">Result</dt>
+        <dd class="col-sm-9">@Model.Result</dd>
+    </dl>
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="InterviewId" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

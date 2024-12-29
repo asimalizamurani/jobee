@@ -1,0 +1,74 @@
+﻿@model IEnumerable<jobee.Models.Vacancy>
+
+@{
+    ViewData["Title"] = "Vacancy List";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Available Vacancies</h1>
+
+    <!-- Success or Error message -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <!-- Table for displaying vacancies -->
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-striped table-bordered text-dark">
+                <thead>
+                    <tr class="text-dark">
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Created By</th>
+                        <th>Created At</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var vacancy in Model)
+                    {
+                        <tr class="text-dark">
+                            <td>@vacancy.VacancyId</td>
+                            <td>@vacancy.Title</td>
+                            <td>@vacancy.Description</td>
+                            <td>@vacancy.CreatedBy</td>
+                            <td>@vacancy.CreatedAt.ToString("dd MMM yyyy")</td>
+                            <td>@vacancy.Status</td>
+                            <td>
+                                @if (User.IsInRole("Admin") || User.IsInRole("HR"))
+                                {
+                                    <a href="@Url.Action("Edit", "Vacancy", new { id = vacancy.VacancyId })" class="btn btn-primary">Update</a>
+                                    <a href="@Url.Action("Delete", "Vacancy", new { id = vacancy.VacancyId })" class="btn btn-danger">Delete</a>
+                                }
+                                @if (User.IsInRole("Applicant"))
+                                {
+                                    <a href="@Url.Action("Apply", "Applicant", new { vacancyId = vacancy.VacancyId })" class="btn btn-primary">Apply</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Add Vacancy Button (visible only for authorized users) -->
+    @if (User.IsInRole("Admin") || User.IsInRole("HR"))
+    {
+        <div class="text-center mt-4">
+            <a href="@Url.Action("Create", "Vacancy")" class="btn btn-primary">Create New Vacancy</a>
+        </div>
+    }
+</div>

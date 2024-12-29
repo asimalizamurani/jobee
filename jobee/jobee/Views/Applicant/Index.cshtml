@@ -1,0 +1,122 @@
+﻿@model IEnumerable<jobee.Models.Applicant>
+
+@{
+    ViewData["Title"] = "Applicant List";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Applicants</h1>
+
+    <!-- Success or Error message -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <!-- Table for displaying applicants -->
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-striped table-bordered text-dark">
+                <thead>
+                    <tr class="text-dark">
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Job Title</th>
+                        <th>Status</th>
+                        <th>Applied At</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var applicant in Model)
+                    {
+                        <tr class="text-dark">
+                            <td>@applicant.ApplicantId</td>
+                            <td>@applicant.Name</td>
+                            <td>@applicant.Email</td>
+                            <td>@applicant.Role</td>
+                            <td>@applicant.AttachedVacancy?.Title </td>
+                            <td>@applicant.AttachedVacancy?.Status</td>
+                            <td>@applicant.AppliedAt.ToString("dd MMM yyyy")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@{
+    ViewData["Title"] = "Your Applications";
+}
+
+<h1 class="text-center text-dark my-4">Your Job Applications</h1>
+
+<!-- Display Success or Error Messages -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (Model == null || !Model.Any())
+{
+    <p class="text-center text-white mt-4">You have not applied for any jobs yet.</p>
+}
+else
+{
+    <!-- Table to Display Applied Jobs -->
+    <div class="table-responsive">
+        <table class="table table-dark table-hover table-striped mt-4">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">Job Title</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Applied On</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var applicant in Model)
+                {
+                    <tr class="text-center align-middle">
+                        <td>@(applicant.AttachedVacancy?.Title ?? "N/A")</td>
+                        <td>@applicant.Role</td>
+                        <td>@applicant.AppliedAt.ToString("MMMM dd, yyyy")</td>
+                        <td>
+                            <span class="badge bg-primary">
+                                @(applicant.AttachedVacancy?.Status ?? "N/A")
+                            </span>
+                        </td>
+                        <td>
+                            <!-- View Details Button -->
+                            <a href="@Url.Action("Details", "Applicant", new { id = applicant.AttachedVacancyId })"
+                               class="btn btn-outline-light btn-sm">
+                                View Details
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

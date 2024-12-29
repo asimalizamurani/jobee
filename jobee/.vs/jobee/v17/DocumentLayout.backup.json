@@ -1,0 +1,266 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Aptech Coding\\Third Semister\\jobee\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\views\\user\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\views\\user\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\views\\home\\help.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\views\\home\\help.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\views\\report\\applicantreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\views\\report\\applicantreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\views\\interview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\views\\interview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\views\\applicantpanel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\views\\applicantpanel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\controllers\\applicantpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\controllers\\applicantpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\models\\applicantpanelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\models\\applicantpanelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\controllers\\vacancycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\controllers\\vacancycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|g:\\aptech coding\\third semister\\jobee\\jobee\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91D8B652-C6D8-4374-86BD-C22CEC43764A}|jobee\\jobee.csproj|solutionrelative:jobee\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "jobee\\Views\\Home\\Index.cshtml",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "jobee\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAABwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T06:57:19.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Help.cshtml",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\Home\\Help.cshtml",
+              "RelativeDocumentMoniker": "jobee\\Views\\Home\\Help.cshtml",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\Home\\Help.cshtml",
+              "RelativeToolTip": "jobee\\Views\\Home\\Help.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAACAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T04:14:10.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\ApplicantPanel\\Index.cshtml",
+              "RelativeDocumentMoniker": "jobee\\Views\\ApplicantPanel\\Index.cshtml",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\ApplicantPanel\\Index.cshtml",
+              "RelativeToolTip": "jobee\\Views\\ApplicantPanel\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T03:14:09.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicantReport.cshtml",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\Report\\ApplicantReport.cshtml",
+              "RelativeDocumentMoniker": "jobee\\Views\\Report\\ApplicantReport.cshtml",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\Report\\ApplicantReport.cshtml",
+              "RelativeToolTip": "jobee\\Views\\Report\\ApplicantReport.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T02:54:27.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\Interview\\Index.cshtml",
+              "RelativeDocumentMoniker": "jobee\\Views\\Interview\\Index.cshtml",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\Interview\\Index.cshtml",
+              "RelativeToolTip": "jobee\\Views\\Interview\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T03:26:30.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "jobee\\Views\\Home\\About.cshtml",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "jobee\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAADwvz8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T03:29:29.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicantPanelViewModel.cs",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Models\\ApplicantPanelViewModel.cs",
+              "RelativeDocumentMoniker": "jobee\\Models\\ApplicantPanelViewModel.cs",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Models\\ApplicantPanelViewModel.cs",
+              "RelativeToolTip": "jobee\\Models\\ApplicantPanelViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T03:22:27.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "jobee\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "jobee\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEcAAAAAAAAAAADwv1gAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T02:52:46.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Manage.cshtml",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\User\\Manage.cshtml",
+              "RelativeDocumentMoniker": "jobee\\Views\\User\\Manage.cshtml",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\User\\Manage.cshtml",
+              "RelativeToolTip": "jobee\\Views\\User\\Manage.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-26T17:58:35.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicantPanelController.cs",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Controllers\\ApplicantPanelController.cs",
+              "RelativeDocumentMoniker": "jobee\\Controllers\\ApplicantPanelController.cs",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Controllers\\ApplicantPanelController.cs",
+              "RelativeToolTip": "jobee\\Controllers\\ApplicantPanelController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T03:12:31.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "jobee\\Controllers\\HomeController.cs",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "jobee\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowBsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T04:14:48.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VacancyController.cs",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Controllers\\VacancyController.cs",
+              "RelativeDocumentMoniker": "jobee\\Controllers\\VacancyController.cs",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Controllers\\VacancyController.cs",
+              "RelativeToolTip": "jobee\\Controllers\\VacancyController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA+wC0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T18:09:55.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "jobee\\Controllers\\UserController.cs",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Controllers\\UserController.cs",
+              "RelativeToolTip": "jobee\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAOsAAAAAAAAAAAAowPYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T17:55:10.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Controllers\\ReportController.cs",
+              "RelativeDocumentMoniker": "jobee\\Controllers\\ReportController.cs",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Controllers\\ReportController.cs",
+              "RelativeToolTip": "jobee\\Controllers\\ReportController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T02:57:37.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\User\\Create.cshtml",
+              "RelativeDocumentMoniker": "jobee\\Views\\User\\Create.cshtml",
+              "ToolTip": "G:\\Aptech Coding\\Third Semister\\jobee\\jobee\\Views\\User\\Create.cshtml",
+              "RelativeToolTip": "jobee\\Views\\User\\Create.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAADwvywAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-26T17:54:00.286Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

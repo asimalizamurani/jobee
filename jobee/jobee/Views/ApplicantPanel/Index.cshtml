@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Applicant Dashboard";
+    var applicant = ViewBag.Applicant as jobee.Models.Applicant;
+    var appliedVacancies = ViewBag.AppliedVacancies as List<jobee.Models.Vacancy>;
+    var interviews = ViewBag.Interviews as List<jobee.Models.Interview>;
+}
+
+<div class="container mt-4">
+    <h1>Welcome, @applicant.Name!</h1>
+
+    <div class="card my-4">
+        <div class="card-header bg-primary text-white">
+            Applied Vacancies
+        </div>
+        <div class="card-body">
+            @if (appliedVacancies != null && appliedVacancies.Any())
+            {
+                <ul class="list-group">
+                    @foreach (var vacancy in appliedVacancies)
+                    {
+                        <li class="list-group-item">
+                            <strong>@vacancy.Title</strong> - @vacancy.Status
+                            <a href="/ApplicantPanel/ViewApplication/@vacancy.VacancyId" class="btn btn-sm btn-info float-right">View Details</a>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p>No vacancies applied yet.</p>
+            }
+        </div>
+    </div>
+
+    <div class="card my-4">
+        <div class="card-header bg-success text-white">
+            Upcoming Interviews
+        </div>
+        <div class="card-body">
+            @if (interviews != null && interviews.Any())
+            {
+                <ul class="list-group">
+                    @foreach (var interview in interviews)
+                    {
+                        <li class="list-group-item">
+                            Vacancy: @interview.Vacancy.Title<br />
+                            Date: @interview.Date.ToShortDateString() at @interview.Time
+                            <a href="/ApplicantPanel/ViewInterview/@interview.InterviewId" class="btn btn-sm btn-info float-right">View Details</a>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p>No interviews scheduled yet.</p>
+            }
+        </div>
+    </div>
+</div>

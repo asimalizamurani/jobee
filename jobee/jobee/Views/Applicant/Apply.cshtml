@@ -1,0 +1,59 @@
+﻿@model jobee.Models.Applicant
+
+@{
+    ViewData["Title"] = "Apply for Job";
+}
+
+<h1>Apply for Job</h1>
+
+<!-- Apply Form -->
+<form asp-action="Apply" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="AttachedVacancyId" />
+    <div class="form-group">
+        <label asp-for="Name">Full Name</label>
+        <input type="text" class="form-control" asp-for="Name" placeholder="Enter your full name" required />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email">Email Address</label>
+        <input type="email" class="form-control" asp-for="Email" placeholder="Enter your email" required />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Role">Role</label>
+        <input type="text" class="form-control" asp-for="Role" placeholder="Enter your role" required />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AttachedVacancyId">Select Vacancy</label>
+        <select class="form-control" asp-for="AttachedVacancyId" required>
+            <option value="">-- Select a Vacancy --</option>
+            @foreach (var vacancy in ViewBag.Vacancies)
+            {
+                <option value="@vacancy.VacancyId">@vacancy.Title</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ResumePath">Upload Resume</label>
+        <input type="file" class="form-control" name="resumePath" accept=".pdf, .doc, .docx" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Submit Application</button>
+</form>
+
+<!-- Error or Success Message -->
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger mt-3">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success mt-3">
+        @TempData["SuccessMessage"]
+    </div>
+}

@@ -1,0 +1,35 @@
+﻿@model jobee.Models.Interview
+@{
+    ViewData["Title"] = "Schedule Interview";
+}
+<div class="container mt-4">
+    <h2>Schedule Interview</h2>
+    <form asp-action="Create" method="post">
+        <div class="form-group">
+            <label for="VacancyId">Vacancy</label>
+            <select asp-for="VacancyId" class="form-control" asp-items="ViewBag.VacancyId"></select>
+        </div>
+        <div class="form-group">
+            <label for="ApplicantId">Applicant</label>
+            <select asp-for="ApplicantId" class="form-control" asp-items="ViewBag.ApplicantId"></select>
+        </div>
+        <div class="form-group">
+            <label for="InterviewerId">Interviewer</label>
+            <select asp-for="InterviewerId" class="form-control" asp-items="ViewBag.InterviewerId"></select>
+        </div>
+        <div class="form-group">
+            <label for="Date">Date</label>
+            <input asp-for="Date" class="form-control" type="date" />
+        </div>
+        <div class="form-group">
+            <label for="Time">Time</label>
+            <input asp-for="Time" class="form-control" type="time" />
+        </div>
+        <div class="form-group">
+            <label for="Result">Result</label>
+            <input asp-for="Result" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </form>
+</div>

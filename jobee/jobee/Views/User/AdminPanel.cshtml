@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Admin Panel";
+}
+
+<h1>Admin Panel</h1>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Users</h5>
+                    <p class="card-text">View, create, edit, and delete user accounts.</p>
+                    <a href="@Url.Action("Manage", "User")" class="btn btn-primary">Manage Users</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Applicants</h5>
+                    <p class="card-text">View, edit, and delete applicant information.</p>
+                    <a href="@Url.Action("Index", "Applicant")" class="btn btn-primary">Manage Applicants</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Vacancies</h5>
+                    <p class="card-text">Create, edit, and close job vacancies.</p>
+                    <a href="@Url.Action("Index", "Vacancy")" class="btn btn-primary">Manage Vacancies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Schedule Interviews</h5>
+                    <p class="card-text">Schedule and manage interviews for applicants.</p>
+                    <a href="@Url.Action("Index", "Interview")" class="btn btn-primary">Schedule Interviews</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Generate Reports</h5>
+                    <p class="card-text">Generate comprehensive reports on users, applicants, vacancies, and interview statuses.</p>
+                    <a href="@Url.Action("GenerateReport", "Interview")" class="btn btn-primary">Generate Reports</a>
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
