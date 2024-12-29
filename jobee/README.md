@@ -1,7 +1,3 @@
-Here’s the updated and enhanced README file for the **Jobee - Web-Based Online Recruitment System** project, including the technologies used:
-
----
-
 # Jobee - Web Based Online Recruitment System
 
 ## Table of Contents
