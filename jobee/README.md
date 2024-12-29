@@ -1,109 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - OnlineJobs</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/OnlineJobs.styles.css" asp-append-version="true" />
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
-            <div class="container">
-                <a class="navbar-brand" href="/Home/Index">Jobee</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse position-relative" id="navbarNav">
-                    <button class="close-btn d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Close">&times;</button>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+Jobee - Web Based Online Recruitment System
+Table of Contents
+Introduction
+Features
+Installation
+Usage
+Contributing
+License
+Contact
+Introduction
+Jobee is a web-based online recruitment system designed to streamline the hiring process. It offers functionalities for applicants, HR, and admin users to manage job applications, vacancies, and interviews efficiently.
 
-                        @if (User.IsInRole("Applicant"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Dashboard/ViewDashboard">Dashboard</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Vacancy/Index">Vacancies</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Applicant/Apply">Apply for Job</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Interview/Index">Interviews</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Reports/ApplicantReport">Reports</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Home/Help">Help</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Home/About">About</a>
-                            </li>
-                        }
+Features
+Applicants can:
+View and apply for job vacancies.
+Manage their applications and interviews.
+Access reports and help resources.
+HR users can:
+Manage applicants and vacancies.
+Schedule and manage interviews.
+Generate HR-specific reports.
+Admin users can:
+Oversee applicants and vacancies.
+Create new job vacancies.
+Manage user roles and permissions.
+Generate administrative reports.
+Installation
+To run the Jobee system locally, follow these steps:
 
-                        @if (User.IsInRole("HR"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Applicant/Index">Manage Applicants</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Vacancy/Index">Vacancies</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Interview/Index">Interviews</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Reports/HRReport">Reports</a>
-                            </li>
-                        }
+Clone the repository:
 
-                        @if (User.IsInRole("Admin"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Applicant/Index">Manage Applicants</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Vacancy/Index">Manage Vacancies</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Vacancy/Create">Create Vacancy</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Reports/AdminReport">Reports</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/User/Manage">User Management</a>
-                            </li>
-                        }
+sh
+git clone https://github.com/asimalizamurani/jobee.git
+cd jobee
+Set up the database and update the connection string in appsettings.json.
 
-                    </ul>
-                    <div>
-                        <a href="/User/Login" class="btn btn-primary" style="color: inherit; text-decoration: none;">Login</a>
-                        <a href="/User/Logout" class="btn btn-primary" style="color: inherit; text-decoration: none;">Logout</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+Run the application:
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+dotnet run
+Usage
+Once the application is running, you can access the following functionalities based on your role:
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - OnlineJobs - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
-</body>
-</html>
+Applicants: Apply for jobs, view dashboard, manage interviews.
+HR: Manage applicants, view and create vacancies, conduct interviews.
+Admin: Oversee all operations, manage users, generate reports.
+Contributing
+We welcome contributions to enhance the Jobee system. To contribute:
+
+Fork the repository.
+Create a new feature branch:
+git checkout -b feature/YourFeature
+Commit your changes:
+git commit -m 'Add a new feature'
+Push to the branch:
+git push origin feature/YourFeature
+Open a pull request.
+License
+This project is licensed under the MIT License.
+
+Contact
+For questions or support, please contact Asim Alizamurani.
