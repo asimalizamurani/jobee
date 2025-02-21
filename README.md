@@ -111,4 +111,4 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 ## Contact
-For questions or support, please reach out to **Asim Alizamurani** at [asim.alizamurani@example.com](mailto:asim.alizamurani@example.com).
+For questions or support, please reach out to **Asim Alizamurani** at [asimalizamurani@gmail.com](mailto:asimalizamurani@gmail.com).
